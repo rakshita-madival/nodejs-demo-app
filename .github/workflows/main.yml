@@ -20,8 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Jest globally
+        run: npm install -g jest
+
       - name: Run tests
-        run: npm test
+        run: jest
 
   build-and-push:
     needs: test
@@ -41,3 +44,4 @@ jobs:
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app:latest
+
