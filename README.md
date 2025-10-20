@@ -1,2 +1,2 @@
-# nodejs-demo-app
-Node.js demo application for CI/CD pipeline automation using GitHub Actions and Docker. Includes automated testing with Jest and Docker image deployment to Docker Hub.
+This repository demonstrates a **CI/CD pipeline** for a Node.js app using **GitHub Actions** and **Docker**.  
+The pipeline automatically **tests**, **builds**, and **pushes a Docker image** whenever changes are pushed to the `main` branch.
